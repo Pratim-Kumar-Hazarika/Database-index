@@ -23,5 +23,5 @@ USING GIN (content gin_trgm_ops);``
 This took a hell lot of a time. Creating index on this is this efficient ?? Umm maybe use can use Open-Search and use debezium to push data from postgress ??
 <img width="1254" height="625" alt="Screenshot 2026-03-02 at 4 24 28 PM" src="https://github.com/user-attachments/assets/2343c723-beee-407b-87d9-7bd0a37e360a" />
 
-After the index it is fast. 
+Postgres searched tiagram index -> Found matching row pointers ->Created a bitmap -> When to the disk and pulled the row block. Recheck happens to check correctness.
 <img width="1254" height="625" alt="Screenshot 2026-03-02 at 4 26 39 PM" src="https://github.com/user-attachments/assets/7d9521e3-0409-496c-ae9b-ff4340061b01" />
